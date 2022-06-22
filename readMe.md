@@ -107,4 +107,4 @@
 "まさらPmasara - Love10 (ft Juunana & Ran).mp3",
 "ぴ！pi - SkyHigh VIP.mp3",
 "高尾大毅 - Dont be afraid.mp3"
-],"https://rcph-smz.github.io/rcph_player_src/","KawaiiNeko")
+],"https://rcph-smz.github.io/rcph_player_src/KawaiiNeko","KawaiiNeko")
