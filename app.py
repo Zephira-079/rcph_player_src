@@ -4,9 +4,11 @@ import os
 
 print("<------------- folderName <mp4 convert_to mp3> ------------->")
 folderName = str(input())
+print("<------------- folderName <export/where to save> ------------->")
+pathName = str(input())
 
 for i in os.listdir(folderName): 
-    path = "KawaiiNeko/"
+    path = pathName + "/" 
     videoclip = VideoFileClip(folderName + '/' + i)
     audiofile = videoclip.audio.write_audiofile(i[:-4]+".mp3")
     if not os.path.exists(path):
