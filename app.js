@@ -31,13 +31,21 @@ function start_activity(activity_text) {
 
     const remove = document.createElement("div")
     remove.setAttribute("class","remove")
-    remove.textContent = "remove"
+    remove.textContent = "hide"
     remove.addEventListener("click",() => {
         remove.remove()
+        clipboard.remove()
         activity.remove()
+    })
+    const clipboard = document.createElement("div")
+    clipboard.setAttribute("class","clipboard")
+    clipboard.textContent = "copy"
+    clipboard.addEventListener("click",async () => {
+        await navigator.clipboard.writeText(JSON.stringify(activity_text,null,4))
     })
 
     body.appendChild(remove)
+    body.appendChild(clipboard)
     activity.textContent = JSON.stringify(activity_text,null,4)
 
     body.appendChild(activity)
