@@ -66,5 +66,5 @@ function manif_sd() {
 
 manifest_sd.addEventListener("click",manif_sd)
 
-add_list("kawaiineko.json","kawaiineko")
+add_list("kawaiinyahn.json","kawaiinyahn")
 add_list("kawaiinyeow.json","kawaiinyeow")
